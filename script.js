@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
         page.style.display = "none";
       }
     });
+    document.getElementById("menu-grid").style.display = "block";
+    document.getElementById("here-it-is").style.display = "none";
   }
 
   links.forEach((link) => {
@@ -62,3 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hiển thị trang mặc định (home)
   showPage("home");
 });
+// Menu Item Click Event
+const menuItems = document.querySelectorAll(".menu-item");
+menuItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("menu-grid").style.display = "none";
+    document.getElementById("here-it-is").style.display = "block";
+  });
+});
+function updateMainImage(imageSrc) {
+  document.getElementById("mainImage").src = imageSrc;
+  const thumbnails = document.querySelectorAll(".image-gallery img");
+  thumbnails.forEach((img) => img.classList.remove("active"));
+  event.target.classList.add("active");
+}

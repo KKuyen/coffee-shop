@@ -97,16 +97,108 @@
             </div>
             <!-- Menu -->
             <div id="menu" class="page" style="display: none">
-              <h2>Our Menu</h2>
-              <p>Explore our delicious coffee menu.</p>
+             <div class="menu-container">
+             
+ 
+              <div id="menu-grid">
+                 <div class="titlemenu">   <h1 class="menu-title">Menu</h1></div>
+                 <div class="menu-grid"  > 
+  <!-- Item 1 -->
+  <div class="menu-item" data-page="home">
+    <img src="black-coffee.jpg" alt="Black Coffee" class="menu-img">
+    <div class="menu-info">
+      <h3>Black Coffee</h3>
+      <p>$2.0(S) - $2.5(M) - $3.0(L)</p>
+    </div>
+  </div>
+  <!-- Item 2 -->
+  <div class="menu-item" data-page="about">
+    <img src="hot-chocolate.jpg" alt="Hot Chocolate" class="menu-img">
+    <div class="menu-info">
+      <h3>Hot Chocolate</h3>
+      <p>$2.5(S) - $3.0(M) - $3.5(L)</p>
+    </div>
+  </div>
+  <!-- Item 3 -->
+  <div class="menu-item" data-page="location">
+    <img src="cafe-breve.jpg" alt="Cafe Breve" class="menu-img">
+    <div class="menu-info">
+      <h3>Cafe Breve</h3>
+      <p>$2.5(S) - $3.0(M) - $3.5(L)</p>
+    </div>
+  </div>
+  <!-- Item 4 -->
+  <div class="menu-item" data-page="menu">
+    <img src="milk-coffee.jpg" alt="Milk Coffee" class="menu-img">
+    <div class="menu-info">
+      <h3>Milk Coffee</h3>
+      <p>$1.5(S) - $2.0(M) - $2.5(L)</p>
+    </div>
+  </div>
+</div>
+              </div>
+  
+ <div id="here-it-is" class="page" style="display: none">
+    <div class="titlemenu">   <h1 class="menu-title">Black Coffee</h1></div>
+    <div class="container">
+      <div class="headcon">
+    <div class="product-display">
+        <!-- Image Gallery -->
+      <div class="imageback">  <!-- Main Image -->
+        <div class="main-image">
+            <img src="image1.jpg" alt="Main Black Coffee" id="mainImage">
+        </div>
+          <div class="image-gallery">
+            <img src="image1.jpg" alt="Black Coffee 1" class="active" onclick="updateMainImage('image1.jpg')">
+            <img src="image2.jpg" alt="Black Coffee 2" onclick="updateMainImage('image2.jpg')">
+            <img src="image3.jpg" alt="Black Coffee 3" onclick="updateMainImage('image3.jpg')">
+        </div>
+</div>
+
+      
+
+        <!-- Product Info -->
+         <div>
+        <div class="product-info">
+            <div class="selectprd">
+                
+                <input type="number" id="quantity" min="1" value="1" style="height: 28px; width: 40px; font-weight: 600; font-size: 30; color: #492B07;" >
+            </div>
+           <div class="selectprd">
+            
+                <select id="size" class="selectprd" style="height: 40px; font-weight: 600; font-size: 30;color: #492B07" >
+                    <option value="S">$2.0 (S)</option>
+                    <option value="M">$3.0 (M)</option>
+                    <option value="L">$4.0 (L)</option>
+                </select>
+            </div>
+            
+        </div>
+        <button class="buy-button">Buy</button>
+        </div>
+    </div>
+</div>
+    <!-- Benefits Section -->
+    <div >
+        <h2>Benefits & Effects</h2>
+        <p>You may love your <strong>black coffee</strong> in the morning to help you feel energized and get ready for the day, but how much do you know about it? Do you know how drinking black coffee affects your body and your mind?</p>
+        <p><strong>Black coffee</strong> is simply coffee that is normally brewed without the addition of additives such as sugar, milk, cream, or added flavors. While it has a slightly bitter taste compared to when it is flavored with additives, many people love a strong cup of <strong>black coffee</strong>.</p>
+        <p>In this article, we talk about the benefits of drinking <strong>black coffee</strong>, how it can help you in losing weight, potential side effects, as well as how to make the perfect cup of <strong>black coffee</strong>.</p>
+    </div>
+</div>
+  </div>
             </div>
             <!-- Contact -->
             <div id="contact" class="page" style="display: none">
               <h2>Contact Us</h2>
               <p>Reach out to us for any inquiries.</p>
             </div>
+                  <!-- Đây Rồi -->
+  
+        
           </section>
         </div>
+  
 
         <!-- Footer -->
         <div class="footer">
