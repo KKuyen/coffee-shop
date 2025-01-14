@@ -78,3 +78,37 @@ function updateMainImage(imageSrc) {
   thumbnails.forEach((img) => img.classList.remove("active"));
   event.target.classList.add("active");
 }
+window.addEventListener("scroll", function () {
+  var cafecontain = document.getElementById("cafecontain");
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollPosition > 100) {
+    // Adjust the value as needed
+    cafecontain.classList.add("fixed");
+  } else {
+    cafecontain.classList.remove("fixed");
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const snowContainer = document.createElement("div");
+  snowContainer.classList.add("snow-container");
+  document.body.appendChild(snowContainer);
+
+  function createSnowflake() {
+    const snowflake = document.createElement("img");
+    snowflake.src = "snowflake.png"; // Đường dẫn đến ảnh tuyết
+    snowflake.classList.add("snowflake");
+    snowflake.style.left = Math.random() * 100 + "vw"; // Vị trí ngẫu nhiên theo chiều ngang
+    snowflake.style.animationDuration = Math.random() * 3 + 2 + "s"; // Thời gian rơi ngẫu nhiên
+    snowflake.style.opacity = Math.random(); // Độ trong suốt ngẫu nhiên
+    snowflake.style.width = Math.random() * 40 + 20 + "px"; // Kích thước ngẫu nhiên
+
+    snowContainer.appendChild(snowflake);
+
+    setTimeout(() => {
+      snowflake.remove(); // Xóa bông tuyết sau khi rơi xong
+    }, 5000); // Sau 5 giây
+  }
+
+  setInterval(createSnowflake, 100); // Tạo bông tuyết mới mỗi 100ms
+});
