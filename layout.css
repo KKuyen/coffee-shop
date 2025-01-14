@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #bb7f11;
+  color: #4a2c00;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.header {
+  text-align: center;
+  padding: 20px 0;
+
+  background-color: #4b2802;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  width: 23%;
+  background-color: #fee8d1;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.sidebar li {
+  border-bottom: 1.5px dashed #000000; /* Divider (đường kẻ) */
+  margin-left: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #4a2c00;
+  font-weight: bold;
+
+  display: block;
+  padding: 15px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 18px;
+}
+
+.sidebar a.active {
+  background-color: #cca45c; /* Brown for active state */
+
+  padding: 15px;
+}
+
+.content {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 28px;
+}
+
+.content h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+}
+
+.images img {
+  width: 30%;
+  border-radius: 8px;
+}
+.main-container {
+  width: 60.33%;
+  margin: 0 auto;
+}
+body {
+  font-family: Arial, sans-serif;
+
+  padding: 0;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px; /* Thêm hoặc chỉnh sửa chiều cao tại đây */
+  object-fit: cover;
+
+  vertical-align: middle;
+}
+
+.text {
+  position: absolute;
+  bottom: 10px;
+
+  color: white;
+  background: rgba(161, 140, 77, 0.769);
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+
+  width: 100%;
+}
+.logo {
+  color: #caa655; /* Màu chữ vàng nhạt */
+  font-family: "Roboto", sans-serif; /* Font Roboto */
+  font-size: 300px; /* Kích thước chữ */
+  font-weight: 400; /* Độ dày font chữ */
+  text-shadow: 3px 3px 5px #3b1f0f,
+    /* Bóng chính */ 1px 1px 2px rgba(0, 0, 0, 0.5); /* Bóng phụ nhẹ để tăng chiều sâu */
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.coffee-cup {
+  width: 160px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  transform: rotate(-5deg);
+}
+.footer {
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background: #4b2802;
+  color: #a9834d;
+  padding: 5px 10px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  color: #a9834d;
+}
+.flexx {
+  display: flex;
+  justify-content: center;
+}
+.flex a {
+  color: #a9834d;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.cfseed {
+  height: 30px;
+  width: 30px;
+  margin-left: 3px;
+  margin-top: 6px;
+}
+.cafe1 {
+  position: relative;
+  z-index: 0;
+  height: 300px;
+  width: 100%; /* Đặt chiều rộng theo ý muốn */
+
+  /* Hiệu ứng mờ dần từ dưới lên 50% */
+  -webkit-mask-image: linear-gradient(
+    to top,
+    /* Hướng gradient từ dưới lên */ rgba(0, 0, 0, 0) 0%,
+    /* Phần mờ ở đáy */ rgba(0, 0, 0, 1) 50% /* Phần hiển thị rõ ở trên */
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  mask-size: 100% 100%;
+}
+
+.cafe1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.cafe2 {
+  position: relative;
+  z-index: 0;
+  right: 0;
+  height: 300px;
+  width: 100%; /* Đặt chiều rộng theo ý muốn */
+
+  /* Hiệu ứng mờ dần từ dưới lên 50% */
+  -webkit-mask-image: linear-gradient(
+    to top,
+    /* Hướng gradient từ dưới lên */ rgba(0, 0, 0, 0) 0%,
+    /* Phần mờ ở đáy */ rgba(0, 0, 0, 1) 50% /* Phần hiển thị rõ ở trên */
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  mask-size: 100% 100%;
+}
+
+.cafe2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.cafecontain {
+  position: absolute;
+  z-index: 0;
+  left: -55px;
+  display: flex;
+}
+.cafecontain2 {
+  position: absolute;
+  z-index: 0;
+
+  right: 0;
+  display: flex;
+}
+/* Position the first cafe image */
