@@ -1,27 +1,28 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  margin          : 0;
+  font-family     : Arial, sans-serif;
   background-color: #bb7f11;
-  color: #4a2c00;
+  color           : #4a2c00;
 }
 
 .background {
-  background-size: cover;
+  background-size    : cover;
   background-position: center;
-  width: 100%;
-  height: 100vh;
-  position: relative;
+  width              : 100%;
+  height             : 100vh;
+  position           : relative;
 }
+
 .header {
   text-align: center;
-  padding: 20px 0;
+  padding   : 20px 0;
 
   background-color: #4b2802;
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 36px;
+  margin     : 0;
+  font-size  : 36px;
   font-weight: bold;
 }
 
@@ -34,44 +35,46 @@ body {
 }
 
 .sidebar {
-  width: 23%;
+  width           : 23%;
   background-color: #fee8d1;
-  padding: 10px;
+  padding         : 10px;
 }
 
 .sidebar ul {
   list-style-type: none;
-  padding: 0;
-  margin-left: 15px;
-  margin-right: 10px;
+  padding        : 0;
+  margin-left    : 15px;
+  margin-right   : 10px;
 }
 
 .sidebar li {
-  border-bottom: 1.5px dashed #000000; /* Divider (đường kẻ) */
-  margin-left: 15px;
+  border-bottom: 1.5px dashed #000000;
+  /* Divider (đường kẻ) */
+  margin-left  : 15px;
 }
 
 .sidebar a {
   text-decoration: none;
-  color: #4a2c00;
-  font-weight: bold;
+  color          : #4a2c00;
+  font-weight    : bold;
 
-  display: block;
-  padding: 15px;
+  display   : block;
+  padding   : 15px;
   transition: background-color 0.3s, color 0.3s;
-  font-size: 18px;
+  font-size : 18px;
 }
 
 .sidebar a.active {
-  background-color: #cca45c; /* Brown for active state */
+  background-color: #cca45c;
+  /* Brown for active state */
 
   padding: 15px;
 }
 
 .content {
-  width: 75%;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  width           : 75%;
+  background-color: white;
+  padding         : 20px;
 }
 
 .content h2 {
@@ -79,7 +82,7 @@ body {
 }
 
 .content h3 {
-  font-size: 22px;
+  font-size : 22px;
   margin-top: 20px;
 }
 
@@ -89,17 +92,19 @@ body {
 
 .images {
   display: flex;
-  gap: 10px;
+  gap    : 10px;
 }
 
 .images img {
-  width: 30%;
+  width        : 30%;
   border-radius: 8px;
 }
+
 .main-container {
-  width: 60.33%;
+  width : 60.33%;
   margin: 0 auto;
 }
+
 body {
   font-family: Arial, sans-serif;
 
@@ -107,20 +112,21 @@ body {
 }
 
 .slideshow-container {
-  position: relative;
+  position : relative;
   max-width: 100%;
 
   overflow: hidden;
 }
 
 .slide {
-  display: none;
+  display : none;
   position: relative;
 }
 
 .slide img {
-  width: 100%;
-  height: 400px; /* Thêm hoặc chỉnh sửa chiều cao tại đây */
+  width     : 100%;
+  height    : 400px;
+  /* Thêm hoặc chỉnh sửa chiều cao tại đây */
   object-fit: cover;
 
   vertical-align: middle;
@@ -128,42 +134,49 @@ body {
 
 .text {
   position: absolute;
-  bottom: 10px;
+  bottom  : 10px;
 
-  color: white;
+  color     : white;
   background: rgba(161, 140, 77, 0.769);
   text-align: center;
-  padding: 8px;
-  font-size: 14px;
+  padding   : 8px;
+  font-size : 14px;
 
   width: 100%;
 }
+
 .logo {
-  color: #caa655; /* Màu chữ vàng nhạt */
-  font-family: "Roboto", sans-serif; /* Font Roboto */
-  font-size: 300px; /* Kích thước chữ */
-  font-weight: 400; /* Độ dày font chữ */
+  color      : #caa655;
+  /* Màu chữ vàng nhạt */
+  font-family: "Roboto", sans-serif;
+  /* Font Roboto */
+  font-size  : 300px;
+  /* Kích thước chữ */
+  font-weight: 400;
+  /* Độ dày font chữ */
   text-shadow: 3px 3px 5px #3b1f0f,
-    /* Bóng chính */ 1px 1px 2px rgba(0, 0, 0, 0.5); /* Bóng phụ nhẹ để tăng chiều sâu */
+    /* Bóng chính */
+    1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* Bóng phụ nhẹ để tăng chiều sâu */
 }
 
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+  cursor          : pointer;
+  position        : absolute;
+  top             : 50%;
+  transform       : translateY(-50%);
+  padding         : 16px;
+  color           : white;
+  font-weight     : bold;
+  font-size       : 18px;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  border-radius   : 0 3px 3px 0;
+  user-select     : none;
 }
 
 .next {
-  right: 0;
+  right        : 0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -174,128 +187,302 @@ body {
 
 .dot-container {
   text-align: center;
-  margin: 10px 0;
+  margin    : 10px 0;
 }
 
 .dot {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
+  cursor          : pointer;
+  height          : 13px;
+  width           : 13px;
+  margin          : 0 5px;
   background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  border-radius   : 50%;
+  display         : inline-block;
+  transition      : background-color 0.6s ease;
 }
 
 .active,
 .dot:hover {
   background-color: #717171;
 }
+
 .coffee-cup {
-  width: 160px;
-  height: 200px;
-  margin: 0 auto;
-  display: block;
+  width     : 160px;
+  height    : 200px;
+  margin    : 0 auto;
+  display   : block;
   margin-top: 10px;
-  transform: rotate(-5deg);
+  transform : rotate(-5deg);
 }
+
 .footer {
   justify-content: center;
-  align-items: center;
+  align-items    : center;
   justify-content: space-between;
-  display: flex;
-  background: #4b2802;
-  color: #a9834d;
-  padding: 5px 10px;
+  display        : flex;
+  background     : #4b2802;
+  color          : #a9834d;
+  padding        : 5px 10px;
 }
+
 .flex {
-  display: flex;
+  display        : flex;
   justify-content: space-between;
-  color: #a9834d;
+  color          : #a9834d;
 }
+
 .flexx {
-  display: flex;
+  display        : flex;
   justify-content: center;
 }
+
 .flex a {
-  color: #a9834d;
+  color          : #a9834d;
   text-decoration: none;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right   : 5px;
+  margin-left    : 5px;
 }
+
 .cfseed {
-  height: 30px;
-  width: 30px;
+  height     : 30px;
+  width      : 30px;
   margin-left: 3px;
-  margin-top: 6px;
+  margin-top : 6px;
 }
+
 .cafe1 {
   position: relative;
-  z-index: 0;
-  height: 300px;
-  width: 100%; /* Đặt chiều rộng theo ý muốn */
+  z-index : 0;
+  height  : 300px;
+  width   : 100%;
+  /* Đặt chiều rộng theo ý muốn */
 
   /* Hiệu ứng mờ dần từ dưới lên 50% */
-  -webkit-mask-image: linear-gradient(
-    to top,
-    /* Hướng gradient từ dưới lên */ rgba(0, 0, 0, 0) 0%,
-    /* Phần mờ ở đáy */ rgba(0, 0, 0, 1) 50% /* Phần hiển thị rõ ở trên */
-  );
+  -webkit-mask-image: linear-gradient(to top,
+      /* Hướng gradient từ dưới lên */
+      rgba(0, 0, 0, 0) 0%,
+      /* Phần mờ ở đáy */
+      rgba(0, 0, 0, 1) 50%
+      /* Phần hiển thị rõ ở trên */
+    );
   -webkit-mask-size: 100% 100%;
-  mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 50%
-  );
+  mask-image       : linear-gradient(to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 50%);
   mask-size: 100% 100%;
 }
 
 .cafe1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+  /* Đảm bảo ảnh không bị méo */
 }
 
 .cafe2 {
   position: relative;
-  z-index: 0;
-  right: 0;
-  height: 300px;
-  width: 100%; /* Đặt chiều rộng theo ý muốn */
+  z-index : 0;
+  right   : 0;
+  height  : 300px;
+  width   : 100%;
+  /* Đặt chiều rộng theo ý muốn */
 
   /* Hiệu ứng mờ dần từ dưới lên 50% */
-  -webkit-mask-image: linear-gradient(
-    to top,
-    /* Hướng gradient từ dưới lên */ rgba(0, 0, 0, 0) 0%,
-    /* Phần mờ ở đáy */ rgba(0, 0, 0, 1) 50% /* Phần hiển thị rõ ở trên */
-  );
+  -webkit-mask-image: linear-gradient(to top,
+      /* Hướng gradient từ dưới lên */
+      rgba(0, 0, 0, 0) 0%,
+      /* Phần mờ ở đáy */
+      rgba(0, 0, 0, 1) 50%
+      /* Phần hiển thị rõ ở trên */
+    );
   -webkit-mask-size: 100% 100%;
-  mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 50%
-  );
+  mask-image       : linear-gradient(to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 50%);
   mask-size: 100% 100%;
 }
 
 .cafe2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+  /* Đảm bảo ảnh không bị méo */
 }
 
 .cafecontain {
   position: absolute;
-  z-index: 0;
-  left: -55px;
-  display: flex;
+  z-index : 0;
+  left    : -55px;
+  display : flex;
 }
+
 .cafecontain2 {
   position: absolute;
-  z-index: 0;
+  z-index : 0;
 
-  right: 0;
+  right  : 0;
   display: flex;
 }
-/* Position the first cafe image */
+
+
+.home .title {
+  border-bottom   : 1px dashed #4a2c00;
+  border-top      : 1px dashed #4a2c00;
+  background-color: #cca45c;
+  font-weight     : bold;
+  padding         : 15px;
+  padding-left    : 25px;
+  margin-left     : 15px;
+  margin-right    : 15px;
+}
+
+
+.home {
+  background-color: white;
+}
+
+.home-images {
+  display: flex;
+
+  gap    : 10px;
+  padding: 15px;
+}
+
+.home-image {
+  width : 30%;
+  height: 100px;
+}
+
+.home .news {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size  : 17px;
+}
+
+.home .contentt {
+  font-size   : 15px;
+  color       : #4a2c00;
+  margin-left : 15px;
+  margin-right: 15px;
+  margin-top  : 18px;
+}
+
+.dash {
+  border-right: 1px dashed #4a2c00;
+  border-left : 1px dashed #4a2c00;
+}
+
+.about .title {
+  border-bottom   : 1px dashed #4a2c00;
+  border-top      : 1px dashed #4a2c00;
+  background-color: #cca45c;
+  font-weight     : bold;
+  padding         : 15px;
+  padding-left    : 25px;
+  margin-left     : 15px;
+  margin-right    : 15px;
+}
+
+.about .news {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size  : 17px;
+  margin-top : 15px;
+}
+
+.about .contentt {
+  font-size   : 15px;
+  color       : #4a2c00;
+  margin-left : 15px;
+  margin-right: 15px;
+  margin-top  : 18px;
+}
+
+.location .title {
+  border-bottom   : 1px dashed #4a2c00;
+  border-top      : 1px dashed #4a2c00;
+  background-color: #cca45c;
+  font-weight     : bold;
+  padding         : 15px;
+  padding-left    : 25px;
+  margin-left     : 15px;
+  margin-right    : 15px;
+}
+
+.location .news {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size  : 17px;
+  margin-top : 15px;
+}
+
+.location .contentt {
+  font-size   : 15px;
+  color       : #4a2c00;
+  margin-left : 15px;
+  margin-right: 15px;
+  margin-top  : 18px;
+}
+
+.location-image {
+  margin-top  : 15px;
+  width       : 100%;
+  height      : 200px;
+  margin-left : 15px;
+  margin-right: 15px;
+}
+
+.contact .title {
+  border-bottom   : 1px dashed #4a2c00;
+  border-top      : 1px dashed #4a2c00;
+  background-color: #cca45c;
+  font-weight     : bold;
+  padding         : 15px;
+  padding-left    : 25px;
+  margin-left     : 15px;
+  margin-right    : 15px;
+}
+
+.contact .news {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size  : 15px;
+  margin-top : 15px;
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+.form-group {
+  display      : flex;
+  align-items  : center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width      : 200px;
+  font-weight: normal;
+}
+
+.form-group input,
+.form-group textarea {
+  flex         : 1;
+  padding      : 10px;
+  border       : 1px dashed #4a2c00;
+  border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  flex        : 0;
+  margin-right: 10px;
+}
+
+.form-group button {
+  padding         : 10px 20px;
+  background-color: #4a2c00;
+  border          : none;
+  color           : #bb7f11;
+  font-weight     : bold;
+  cursor          : pointer;
+}
