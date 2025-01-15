@@ -398,6 +398,14 @@ body {
   margin-top  : 18px;
 }
 
+.about-image {
+  margin-top  : 15px;
+  width       : 270px;
+  height      : 200px;
+  margin-left : 15px;
+  margin-right: 15px;
+}
+
 .location .title {
   border-bottom   : 1px dashed #4a2c00;
   border-top      : 1px dashed #4a2c00;
@@ -465,24 +473,37 @@ body {
   font-weight: normal;
 }
 
-.form-group input,
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"] {
+  flex         : 1;
+  padding      : 10px;
+  border       : 1px dashed #4a2c00;
+  border-radius: 5px;
+  width        : calc(100% - 300px);
+  /* Adjust width to be smaller */
+}
+
 .form-group textarea {
   flex         : 1;
   padding      : 10px;
   border       : 1px dashed #4a2c00;
   border-radius: 5px;
+  width        : calc(100% - 220px);
 }
 
 .form-group input[type="checkbox"] {
   flex        : 0;
-  margin-right: 10px;
+  margin-left : 200px;
+  margin-right: 15px;
 }
 
 .form-group button {
-  padding         : 10px 20px;
+  padding         : 7px 13px;
   background-color: #4a2c00;
   border          : none;
   color           : #bb7f11;
   font-weight     : bold;
   cursor          : pointer;
+  margin-left     : 200px;
 }
